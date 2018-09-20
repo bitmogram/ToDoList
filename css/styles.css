@@ -61,3 +61,16 @@ li {
   padding-top: 2%;
   padding-bottom: 2%;
 }
+
+.ul-two {
+  margin-top: 25px;
+  padding-top: 30px;
+}
+
+.pagebreak {
+  margin-top: 95px;
+  margin-bottom: 23px;
+  text-shadow: 6px 0px 30px black;
+  color: white;
+
+}

@@ -28,10 +28,19 @@
 //   }
 // }
 // console.log(addTodoItem);
-// 
+//
 // list.addEventListener("click", buttonClicked)
 //
 // function buttonClicked(event) {
 //   const element = event.target;
 //   if(element.type === "")
 // }
+
+taskForm.addEventListener("submit", e => {
+  e.preventDefault();
+  let doList = document.getElementById("form");
+  let newTask = document.createElement("li");
+  let task = e.target["tsk"].value;
+  return task;
+  console.log(task);
+})

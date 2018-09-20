@@ -11,10 +11,21 @@
 <body>
 
   <h1 class="text-center main-h1">Just Do It</h1>
-  <p class="text-center main-p1">Simple todo list for people on the go</p>
-  <p class="text-center secondary-p1">Add to your Todo list now</p>
+  <p class="text-center main-p1">A simple todo for people on the move</p>
+  <p class="text-center secondary-p1">Stop staring and start typing a Todo | Click +</p>
+
+<!-- New form from my awesome classmate! -->
+  <!-- <form method="post" name="taskForm" action="index.html">
+    <div class="form-group">
+      <label for="task"></label>
+      <input type="text" class="form-control" id="task" value="" name="tsk" placeholder="dfdf">
+      </div>
+    <input class="btn pull-right btn-success" type="submit" value="+">
+  </form> -->
+
 
   <!--Input form for to do list-->
+
   <form id="form">
     <div class="form-group">
       <input type="text" class="form-control" id="input" aria-describedby="todoInput" placeholder="eg. Put a Bruce sticker on Beth's _______.">
@@ -22,24 +33,46 @@
     <button type="submit" class="btn btn-success pull-right" id="submit-button">+</button>
   </form>
 
-<!-- Container list items to contain user input  -->
-  <ul class="col-8 mx-auto" id=list>
-    <li>Clean my room
+<!-- Container list items to contain user input/Todo items  -->
+  <ul class="col-8 mx-auto ul-one" id=list>
+    <li>Eat my veggies for today n drink a bunch of water.
       <button type="button" class="btn btn-danger pull-right">Delete</button>
-      <button type="button" class="btn btn-success pull-right">Completed</button>
+      <button type="button" class="btn btn-success pull-right">Complete</button>
     </li>
 
     <li>Practice Java Script
       <button type="button" class="btn btn-danger pull-right">Delete</button>
-      <button type="button" class="btn btn-success pull-right">Completed</button>
+      <button type="button" class="btn btn-success pull-right">Complete</button>
     </li>
 
-    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eligendi, odio dolore non, tempore animi.
+    <li>Tell my classmates to shoot for their dreams.
       <button type="button" class="btn btn-danger pull-right">Delete</button>
-      <button type="button" class="btn btn-success pull-right">Completed</button>
+      <button type="button" class="btn btn-success pull-right">Complete</button>
     </li>
   </ul>
 
+  <!-- Pagebreak Divider used to separate active and complete sections. -->
+  <div class="pagebreak text-center">
+    <h3>View Completed Todo Items Below</h2>
+  </div>
+
+<!-- Completed Todo items - With the option to add them to the active todo again. -->
+  <ul class="col-8 mx-auto ul-two" id=list-two>
+    <li>Make somebody's day by doing something nice.
+      <button type="button" class="btn btn-danger pull-right">Remove from list</button>
+      <button type="button" class="btn btn-success pull-right">Restore</button>
+    </li>
+
+    <li>Fix the thingamabopper on my car.
+      <button type="button" class="btn btn-danger pull-right">Remove from list</button>
+      <button type="button" class="btn btn-success pull-right">Restore</button>
+    </li>
+
+    <li>Call John Doe
+      <button type="button" class="btn btn-danger pull-right">Remove from list</button>
+      <button type="button" class="btn btn-success pull-right">Restore</button>
+    </li>
+  </ul>
 
 
 
