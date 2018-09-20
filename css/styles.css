@@ -1,0 +1,63 @@
+/* styles for background video */
+#backgroundVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: link rel="css/phone.jpg" no-repeat;
+  background-size: cover;
+}
+
+/* styles for h1 font*/
+.main-h1 {
+  font-size: 55px;
+  color: white;
+  text-shadow: 2px 5px 6px black;
+}
+
+/*Tagline under main h1*/
+.main-p1 {
+font-style: italic;
+font-stretch: expanded;
+}
+
+.secondary-p1 {
+  font-size: 20px;
+  color: white;
+  text-shadow: 6px 0px 25px black;
+}
+
+body {
+  padding: 90px;
+}
+
+form {
+  padding: 0px 20%;
+
+}
+
+/* This code styles the todo list and hides it when there is no user input. */
+ul {
+  font-size: 20px;
+  color: white;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 95px;
+  /* display: none; */
+}
+
+li {
+  /* border-style: none none inset none; */
+  border-bottom: 1.5px inset white;
+  border-radius: 5px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}

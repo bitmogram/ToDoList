@@ -10,7 +10,47 @@
 </head>
 <body>
 
-  <div>Hello</div>
+  <h1 class="text-center main-h1">Just Do It</h1>
+  <p class="text-center main-p1">Simple todo list for people on the go</p>
+  <p class="text-center secondary-p1">Add to your Todo list now</p>
+
+  <!--Input form for to do list-->
+  <form id="form">
+    <div class="form-group">
+      <input type="text" class="form-control" id="input" aria-describedby="todoInput" placeholder="eg. Put a Bruce sticker on Beth's _______.">
+    </div>
+    <button type="submit" class="btn btn-success pull-right" id="submit-button">+</button>
+  </form>
+
+<!-- Container list items to contain user input  -->
+  <ul class="col-8 mx-auto" id=list>
+    <li>Clean my room
+      <button type="button" class="btn btn-danger pull-right">Delete</button>
+      <button type="button" class="btn btn-success pull-right">Completed</button>
+    </li>
+
+    <li>Practice Java Script
+      <button type="button" class="btn btn-danger pull-right">Delete</button>
+      <button type="button" class="btn btn-success pull-right">Completed</button>
+    </li>
+
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eligendi, odio dolore non, tempore animi.
+      <button type="button" class="btn btn-danger pull-right">Delete</button>
+      <button type="button" class="btn btn-success pull-right">Completed</button>
+    </li>
+  </ul>
+
+
+
+
+  <!-- Background video -->
+  <video autoplay muted loop id="backgroundVideo">
+    <source src="img/phone.mp4" type="video/mp4">
+  </video>
+
+
+
+
 <link rel="stylesheet" href="js/scripts.js">
 </body>
 </html>
